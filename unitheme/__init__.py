@@ -3,5 +3,5 @@
 """Top-level package for Unitheme."""
 
 __author__ = """Myst Fox"""
-__email__ = 'git@focks.pw'
+__email__ = 'myst@focks.pw'
 __version__ = '0.1.0'

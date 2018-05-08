@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Myst Fox <git@focks.pw>
+* Myst Fox <myst@focks.pw>
 
 Contributors
 ------------

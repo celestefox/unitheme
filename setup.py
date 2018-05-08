@@ -19,7 +19,7 @@ test_requirements = ['pytest', ]
 
 setup(
     author="Myst Fox",
-    author_email='git@focks.pw',
+    author_email='myst@focks.pw',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Environment :: Console',

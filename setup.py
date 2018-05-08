@@ -22,15 +22,16 @@ setup(
     author_email='git@focks.pw',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
+        'Environment :: Console',
+        # Doesn't have a gui but most of what it does is pointless w/o X
+        'Environment :: X11 Applications',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Topic :: Desktop Environment',
+        'Topic :: Utilities',
     ],
     description="An attempt to unify many theming methods.",
     entry_points={
@@ -45,6 +46,7 @@ setup(
     keywords='unitheme',
     name='unitheme',
     packages=find_packages(include=['unitheme']),
+    python_requires=">=3.6",
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

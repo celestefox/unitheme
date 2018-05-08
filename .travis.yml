@@ -3,26 +3,18 @@
 language: python
 python:
   - 3.6
-  - 3.5
-  - 3.4
-  - 2.7
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
 
 # Command to run tests, e.g. python setup.py test
 script: tox
-
-# Assuming you have installed the travis-ci CLI tool, after you
-# create the Github repo and add it to Travis, run the
-# following command to finish PyPI deployment setup:
-# $ travis encrypt --add deploy.password
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
   user: mystfox
   password:
-    secure: PLEASE_REPLACE_ME
+    secure: OF9Cpr1ADc9LJbPAa2AHkmJzfq+uKpuMvzlJGOAuGaGztIzakK31OvFDv/HCbAF/z6q+2cwRRdtiTZp9LIe+VDsOT85U9c1WKkawUo/a5pbcrAAcdM0/9FeSkB/FQat/L8QwdsDKcV9DImAnGJ6Xti4lqWRHfQZRVugqwOEMg/kCDJx0khHdm2DWhqnjwBFPxYMLiLrp/BQbIsm5kWRhBKRsTIO+PZZZJ79nKra4IokvxeHu61SUUDqIG4o0CXqiKoGwlV904fOlVFI3SUm5rZcwQAm660UFnyYIuwvBv3y9owYQcVLFMqnsiIpl1Cie6MCHG/EE49GEoAjVc8hM+/KlywLcioFxB9xOmU9zwG08IjnpAxKRrcoPcM5t2eNgroKKzXWZ+DBECi5+sP5sAIEv8bMFcGvwxTNdfoNIXLpKY7mBrJsR108CbjiuUST/XnAXgOgAiYAipyeTOuvFF4PRirquSnx76kIMlH+vlKu0eNNADQ6jmiowhJ6hCuJFW9YoudlxKqPyVM52vXqpzTvDqjGA3p2zEgptllKmvgX3F30rLD6eqZxoOC+scZP+Pgjx7O01dA9HAumeCK0Mk64FWLvbGunDdBQQd6q3vqRbiIJa3Oasqg5YGRCdPbHssWoTzlxyuMOpK4cnOlHpCFOZZpOuxPWxV5PWInHUvjg=
   on:
     tags: true
     repo: mystfox/unitheme

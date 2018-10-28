@@ -2,5 +2,5 @@ Click==6.7
 click-completion==0.4.1
 attrs==18.1.0
 xdg==3.0.2
-pywal==3.1.0
+pywal==3.2.1
 pybase16-builder==0.1.7
